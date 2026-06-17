@@ -1,10 +1,105 @@
-/* ===========================
-   STYLE PRINCIPAL AFRITALENT
-=========================== */
+/* =========================
+   VARIABLES CSS
+========================= */
+:root {
+    --primary-color: #2f80ed;
+    --secondary-color: #1f2937;
+    --light-color: #f9fafb;
+    --dark-color: #111827;
+    --accent-color: #10b981;
+    --text-color: #374151;
 
-/* Le CSS sera ajouté progressivement dans les prochains commits */
+    --font-title: 'Playfair Display', serif;
+    --font-body: 'Poppins', sans-serif;
+}
 
-body {
+/* =========================
+   RESET GLOBAL
+========================= */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--text-color);
+    background-color: var(--light-color);
+    line-height: 1.6;
+}
+
+/* =========================
+   TYPOGRAPHIE
+========================= */
+h1, h2, h3, h4, h5 {
+    font-family: var(--font-title);
+    color: var(--dark-color);
+}
+
+/* =========================
+   NAVBAR
+========================= */
+.navbar {
+    transition: all 0.3s ease;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    color: var(--primary-color) !important;
+}
+
+/* =========================
+   BOUTONS
+========================= */
+.btn-primary {
+    background-color: var(--primary-color);
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #2563eb;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+.hero-section {
+    padding-top: 80px;
+}
+
+/* =========================
+   CARTES
+========================= */
+.card {
+    border: none;
+    border-radius: 15px;
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* =========================
+   SERVICE CARDS
+========================= */
+.service-card {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.service-card:hover {
+    background-color: var(--primary-color);
+    color: white;
+    transform: scale(1.05);
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+    background-color: var(--dark-color);
+    color: white;
 }
