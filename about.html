@@ -4,36 +4,197 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À propos - AfriTalent</title>
 
-    <title>À propos</title>
-
-    <!-- Bootstrap CSS -->
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Mon CSS -->
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
+<!-- NAVBAR -->
 <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+        <div class="container">
 
+            <a class="navbar-brand fw-bold" href="index.html">AfriTalent</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="nav">
+
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="freelances.html">Freelances</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tarifs.html">Tarifs</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="about.html">À propos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
 </header>
 
-<main>
+<main class="container py-5 mt-5">
+
+    <!-- HISTOIRE -->
+    <section class="mb-5">
+        <h1 class="fw-bold text-center">Notre histoire</h1>
+
+        <div class="row align-items-center mt-4">
+
+            <div class="col-md-6">
+                <img src="https://via.placeholder.com/500x300"
+                     alt="Equipe AfriTalent"
+                     class="img-fluid rounded shadow">
+            </div>
+
+            <div class="col-md-6">
+                <p>
+                    AfriTalent est une plateforme fictive créée pour connecter les talents tech africains aux entreprises du monde entier.
+                    Notre objectif est de faciliter l’accès aux opportunités et valoriser les compétences locales.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ÉQUIPE -->
+    <section class="mb-5">
+
+        <h2 class="text-center mb-4">Notre équipe</h2>
+
+        <div class="row g-4 text-center">
+
+            <div class="col-md-3">
+                <div class="card p-3 h-100">
+
+                    <img src="https://via.placeholder.com/120"
+                         alt="CEO Fatou"
+                         class="rounded-circle mx-auto mb-2">
+
+                    <h5>Fatou Ndiaye</h5>
+                    <p class="text-muted">CEO</p>
+
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card p-3 h-100">
+
+                    <img src="https://via.placeholder.com/120"
+                         alt="CTO Ali"
+                         class="rounded-circle mx-auto mb-2">
+
+                    <h5>Ali Ba</h5>
+                    <p class="text-muted">CTO</p>
+
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card p-3 h-100">
+
+                    <img src="https://via.placeholder.com/120"
+                         alt="Designer Aminata"
+                         class="rounded-circle mx-auto mb-2">
+
+                    <h5>Aminata Sow</h5>
+                    <p class="text-muted">UI/UX Designer</p>
+
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card p-3 h-100">
+
+                    <img src="https://via.placeholder.com/120"
+                         alt="Dev Ibrahima"
+                         class="rounded-circle mx-auto mb-2">
+
+                    <h5>Ibrahima Fall</h5>
+                    <p class="text-muted">Développeur</p>
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- VALEURS -->
+    <section class="mb-5">
+
+        <h2 class="text-center mb-4">Nos valeurs</h2>
+
+        <div class="row g-4 text-center">
+
+            <div class="col-md-3">
+                <i class="bi bi-lightbulb fs-1"></i>
+                <h5>Innovation</h5>
+                <p>Nous valorisons les idées nouvelles.</p>
+            </div>
+
+            <div class="col-md-3">
+                <i class="bi bi-globe fs-1"></i>
+                <h5>Accessibilité</h5>
+                <p>Ouvert à tous les talents africains.</p>
+            </div>
+
+            <div class="col-md-3">
+                <i class="bi bi-people fs-1"></i>
+                <h5>Communauté</h5>
+                <p>Une plateforme collaborative.</p>
+            </div>
+
+            <div class="col-md-3">
+                <i class="bi bi-award fs-1"></i>
+                <h5>Excellence</h5>
+                <p>Qualité et professionnalisme.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CHIFFRES -->
+    <section class="mb-5">
+
+        <h2 class="text-center mb-4">Nos chiffres clés</h2>
+
+        <div class="row text-center">
+
+            <div class="col-md-4">
+                <h2>+2500</h2>
+                <p>Freelances</p>
+            </div>
+
+            <div class="col-md-4">
+                <h2>+800</h2>
+                <p>Entreprises</p>
+            </div>
+
+            <div class="col-md-4">
+                <h2>+12000</h2>
+                <p>Missions</p>
+            </div>
+
+        </div>
+
+    </section>
 
 </main>
 
-<footer>
-
-</footer>
-
-<!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-<!-- Mon JavaScript -->
-<script src="js/main.js"></script>
-
 </body>
-
 </html>
