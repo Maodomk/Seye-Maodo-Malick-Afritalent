@@ -68,3 +68,81 @@ if(topBtn){
     });
 
 }
+/* ==========================
+   COMPTEURS ANIMÉS
+========================== */
+
+const counters = document.querySelectorAll(".counter");
+
+const counterObserver = new IntersectionObserver((entries) => {
+
+    entries.forEach(entry => {
+
+        if (entry.isIntersecting) {
+
+            const counter = entry.target;
+            const target = Number(counter.dataset.target);
+
+            let current = 0;
+            const increment = Math.ceil(target / 100);
+
+            const updateCounter = () => {
+
+                current += increment;
+
+                if (current < target) {
+
+                    counter.textContent = current;
+
+                    requestAnimationFrame(updateCounter);
+
+                } else {
+
+                    counter.textContent = target;
+
+                }
+
+            };
+
+            updateCounter();
+
+            counterObserver.unobserve(counter);
+
+        }
+
+    });
+
+}, {
+    threshold: 0.5
+});
+
+counters.forEach(counter => {
+    counterObserver.observe(counter);
+});
+/* ==========================
+   ANIMATION FADE-IN
+========================== */
+
+const sections = document.querySelectorAll(".fade-section");
+
+const sectionObserver = new IntersectionObserver((entries) => {
+
+    entries.forEach(entry => {
+
+        if (entry.isIntersecting) {
+
+            entry.target.classList.add("show");
+
+            sectionObserver.unobserve(entry.target);
+
+        }
+
+    });
+
+}, {
+    threshold: 0.2
+});
+
+sections.forEach(section => {
+    sectionObserver.observe(section);
+});
