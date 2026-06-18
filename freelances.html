@@ -38,186 +38,214 @@
                     <li class="nav-item"><a class="nav-link" href="about.html">À propos</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
-                <button id="darkModeBtn" class="btn btn-outline-dark ms-3" aria-label="Changer de thème">
-    <i class="bi bi-moon-fill"></i>
-</button>
+
+                <button id="darkModeBtn" class="btn btn-outline-dark ms-3">
+                    <i class="bi bi-moon-fill"></i>
+                </button>
 
             </div>
-
         </div>
     </nav>
 </header>
 
 <main class="container py-5 mt-5">
 
+    <!-- TITLE -->
     <div class="text-center mb-5">
         <h1 class="fw-bold">Nos freelances</h1>
         <p>Découvrez les talents disponibles</p>
     </div>
 
+    <!-- FILTRES (IMPORTANT JS COMMIT 8) -->
     <div class="text-center mb-4">
-        <button class="btn btn-outline-primary btn-sm m-1">Tous</button>
-        <button class="btn btn-outline-primary btn-sm m-1">Dev</button>
-        <button class="btn btn-outline-primary btn-sm m-1">Design</button>
-        <button class="btn btn-outline-primary btn-sm m-1">Marketing</button>
+        <button class="btn btn-outline-primary btn-sm m-1 filter-btn" data-filter="all">Tous</button>
+        <button class="btn btn-outline-primary btn-sm m-1 filter-btn" data-filter="dev">Dev</button>
+        <button class="btn btn-outline-primary btn-sm m-1 filter-btn" data-filter="design">Design</button>
+        <button class="btn btn-outline-primary btn-sm m-1 filter-btn" data-filter="marketing">Marketing</button>
     </div>
 
+    <!-- GRID -->
     <div class="row g-4">
 
-        <!-- 1 -->
-        <div class="col-md-6 col-lg-4">
+        <!-- 1 DEV -->
+        <div class="col-md-6 col-lg-4 freelance-card" data-category="dev">
             <div class="card p-3 h-100 text-center">
-
-                <img src="images/freelance1.jpg" alt="Amadou Diop" class="card-img-top">
-
-                <h5>Amadou Diop</h5>
+                <img src="images/freelance1.jpg" class="card-img-top" alt="Abdou Diop">
+                <h5>Abdou Diop</h5>
                 <p class="text-muted">Développeur Web</p>
                 <p>React / Node.js</p>
-                <p><strong>15€/h</strong></p>
+                <p><strong>15.000 FCFA/h</strong></p>
                 <span>⭐⭐⭐⭐⭐</span>
-
                 <button class="btn btn-primary btn-sm mt-2">Voir profil</button>
             </div>
         </div>
 
-        <!-- 2 -->
-        <div class="col-md-6 col-lg-4">
+        <!-- 2 DESIGN -->
+        <div class="col-md-6 col-lg-4 freelance-card" data-category="design">
             <div class="card p-3 h-100 text-center">
-
-                <img src="images/freelance2.jpg" alt="Aïcha Sow" class="rounded-circle mx-auto mb-2">
-
+                <img src="images/freelance2.jpg" class="rounded-circle mx-auto mb-2" alt="Aïcha Sow">
                 <h5>Aïcha Sow</h5>
                 <p>UI/UX Designer</p>
                 <p>Figma & UX</p>
-                <p><strong>12€/h</strong></p>
+                <p><strong>12.000 FCFA/h</strong></p>
                 <span>⭐⭐⭐⭐⭐</span>
-
                 <button class="btn btn-primary btn-sm mt-2">Voir profil</button>
             </div>
         </div>
 
-        <!-- 3 -->
-        <div class="col-md-6 col-lg-4">
+        <!-- 3 DATA DEV -->
+        <div class="col-md-6 col-lg-4 freelance-card" data-category="dev">
             <div class="card p-3 h-100 text-center">
-
-                <img src="images/freelance3.jpg" alt="Moussa Kane" class="rounded-circle mx-auto mb-2">
-
-                <h5>Moussa Kane</h5>
+                <img src="images/freelance3.jpg" class="rounded-circle mx-auto mb-2" alt="Malick Kébé">
+                <h5>Malick Kébé</h5>
                 <p>Data Analyst</p>
                 <p>Python / Power BI</p>
-                <p><strong>18€/h</strong></p>
+                <p><strong>18.000 FCFA/h</strong></p>
                 <span>⭐⭐⭐⭐</span>
-
                 <button class="btn btn-primary btn-sm mt-2">Voir profil</button>
             </div>
         </div>
 
-        <!-- 4 -->
-        <div class="col-md-6 col-lg-4">
+        <!-- 4 MARKETING -->
+        <div class="col-md-6 col-lg-4 freelance-card" data-category="marketing">
             <div class="card p-3 h-100 text-center">
-
-                <img src="images/freelance4.jpg" alt="Fatou Ndiaye" class="rounded-circle mx-auto mb-2">
-
-                <h5>Fatou Ndiaye</h5>
+                <img src="images/freelance4.jpg" class="rounded-circle mx-auto mb-2" alt="Rama Fall">
+                <h5>Rama Fall</h5>
                 <p>Marketing Digital</p>
                 <p>SEO & Ads</p>
-                <p><strong>10€/h</strong></p>
+                <p><strong>10.000 FCFA/h</strong></p>
                 <span>⭐⭐⭐⭐⭐</span>
-
                 <button class="btn btn-primary btn-sm mt-2">Voir profil</button>
             </div>
         </div>
 
-        <!-- 5 -->
-        <div class="col-md-6 col-lg-4">
+        <!-- 5 DEV -->
+        <div class="col-md-6 col-lg-4 freelance-card" data-category="dev">
             <div class="card p-3 h-100 text-center">
-
-                <img src="images/freelance5.jpg" alt="Ibrahima Fall" class="rounded-circle mx-auto mb-2">
-
-                <h5>Ibrahima Fall</h5>
+                <img src="images/freelance5.jpg" class="rounded-circle mx-auto mb-2" alt="Moustapha Seck">
+                <h5>Moustapha Seck</h5>
                 <p>Mobile Developer</p>
                 <p>Flutter</p>
-                <p><strong>20€/h</strong></p>
+                <p><strong>20.000 FCFA/h</strong></p>
                 <span>⭐⭐⭐⭐</span>
-
                 <button class="btn btn-primary btn-sm mt-2">Voir profil</button>
             </div>
         </div>
 
-        <!-- 6 -->
-        <div class="col-md-6 col-lg-4">
+        <!-- 6 DESIGN -->
+        <div class="col-md-6 col-lg-4 freelance-card" data-category="design">
             <div class="card p-3 h-100 text-center">
-
-                <img src="images/freelance6.jpg" alt="Marie Sow" class="rounded-circle mx-auto mb-2">
-
+                <img src="images/freelance6.jpg" class="rounded-circle mx-auto mb-2" alt="Marie Sow">
                 <h5>Marie Sow</h5>
                 <p>UI Designer</p>
                 <p>Figma / Prototypage</p>
-                <p><strong>14€/h</strong></p>
+                <p><strong>14.000 FCFA/h</strong></p>
                 <span>⭐⭐⭐⭐⭐</span>
-
                 <button class="btn btn-primary btn-sm mt-2">Voir profil</button>
             </div>
         </div>
 
-        <!-- 7 -->
-        <div class="col-md-6 col-lg-4">
+        <!-- 7 DEVOPS -->
+        <div class="col-md-6 col-lg-4 freelance-card" data-category="dev">
             <div class="card p-3 h-100 text-center">
-
-                <img src="images/freelance7.jpg" alt="Cheikh Ba" class="rounded-circle mx-auto mb-2">
-
+                <img src="images/freelance7.jpg" class="rounded-circle mx-auto mb-2" alt="Cheikh Ba">
                 <h5>Cheikh Ba</h5>
                 <p>DevOps</p>
                 <p>AWS / Docker</p>
-                <p><strong>25€/h</strong></p>
+                <p><strong>25.000 FCFA/h</strong></p>
                 <span>⭐⭐⭐⭐</span>
-
                 <button class="btn btn-primary btn-sm mt-2">Voir profil</button>
             </div>
         </div>
 
-        <!-- 8 -->
-        <div class="col-md-6 col-lg-4">
+        <!-- 8 BACKEND -->
+        <div class="col-md-6 col-lg-4 freelance-card" data-category="dev">
             <div class="card p-3 h-100 text-center">
-
-                <img src="images/freelance8.jpg" alt="Ousmane Diouf" class="rounded-circle mx-auto mb-2">
-
-                <h5>Ousmane Diouf</h5>
+                <img src="images/freelance8.jpg" class="rounded-circle mx-auto mb-2" alt="Albert Diouf">
+                <h5>Albert Diouf</h5>
                 <p>Backend Developer</p>
                 <p>Node.js / API</p>
-                <p><strong>17€/h</strong></p>
+                <p><strong>17.000 FCFA/h</strong></p>
                 <span>⭐⭐⭐⭐⭐</span>
-
                 <button class="btn btn-primary btn-sm mt-2">Voir profil</button>
             </div>
         </div>
 
-        <!-- 9 -->
-        <div class="col-md-6 col-lg-4">
+        <!-- 9 CONTENT -->
+        <div class="col-md-6 col-lg-4 freelance-card" data-category="marketing">
             <div class="card p-3 h-100 text-center">
-
-                <img src="images/freelance9.jpg" alt="Khady Ba" class="rounded-circle mx-auto mb-2">
-
-                <h5>Khady Ba</h5>
+                <img src="images/freelance9.jpg" class="rounded-circle mx-auto mb-2" alt="Khady Wane">
+                <h5>Khady Wane</h5>
                 <p>Content Writer</p>
                 <p>SEO Articles</p>
-                <p><strong>9€/h</strong></p>
+                <p><strong>9.000 FCFA/h</strong></p>
                 <span>⭐⭐⭐⭐</span>
-
                 <button class="btn btn-primary btn-sm mt-2">Voir profil</button>
             </div>
         </div>
 
     </div>
-
 </main>
+<!-- FOOTER -->
+<footer class="bg-dark text-white pt-5 pb-3">
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-3">
+                <h5>AfriTalent</h5>
+                <p>Plateforme de freelances tech en Afrique.</p>
+            </div>
+
+            <div class="col-md-3">
+                <h5>Liens</h5>
+                <p>Accueil<br>Freelances<br>Tarifs<br>Contact</p>
+            </div>
+
+            <div class="col-md-3">
+                <h5>Ressources</h5>
+                <p>Blog<br>FAQ<br>Aide</p>
+            </div>
+
+            <div class="col-md-3">
+                <h5>Contact</h5>
+                <p>Email : contact@afritalent.com</p>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <p class="text-center mb-0">
+            © <span id="year"></span> AfriTalent. Tous droits réservés.
+        </p>
+
+    </div>
+
+</footer>
+
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
 <button id="topBtn" class="btn btn-primary">
     <i class="bi bi-arrow-up"></i>
 </button>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="js/main.js"></script>
+</body>
+</html>
+
+<!-- TOP BUTTON -->
+<button id="topBtn" class="btn btn-primary">
+    <i class="bi bi-arrow-up"></i>
+</button>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+
 </body>
 </html>
