@@ -322,3 +322,42 @@ html {
     color: var(--primary-color);
     margin-bottom: 10px;
 }
+/* ===============================
+   ANIMATION DES SECTIONS
+=============================== */
+
+.fade-section{
+    opacity:0;
+    transform:translateY(40px);
+    transition:all .8s ease;
+}
+
+.fade-section.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+/* ===============================
+   EFFET SUR LES CARTES
+=============================== */
+
+.card{
+    transition:0.3s ease;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 12px 25px rgba(0,0,0,.15);
+}
+
+/* ===============================
+   EFFET SUR LES BOUTONS
+=============================== */
+
+.btn{
+    transition:0.3s ease;
+}
+
+.btn:hover{
+    transform:scale(1.05);
+}
