@@ -2,11 +2,11 @@
    VARIABLES CSS
 ========================= */
 :root {
-    --primary-color: #2f80ed;
+    --primary-color: #5B5FEF;   /* Bleu-violet principal */
     --secondary-color: #1f2937;
     --light-color: #f9fafb;
     --dark-color: #111827;
-    --accent-color: #10b981;
+    --accent-color: #8B5CF6;    /* Violet lumineux */
     --text-color: #374151;
 
     --font-title: 'Playfair Display', serif;
@@ -53,12 +53,25 @@ h1, h2, h3, h4, h5 {
    BOUTONS
 ========================= */
 .btn-primary {
-    background-color: var(--primary-color);
-    border: none;
+    background-color: #5B5FEF !important;
+    border-color:  #5B5FEF !important;
 }
 
 .btn-primary:hover {
-    background-color: #2563eb;
+    background-color: #4A4FD8 !important;
+    border-color:  #4A4FD8 !important;
+
+}
+/* Bouton outline */
+.btn-outline-primary {
+    color: #5B5FEF !important;
+    border-color: #5B5FEF !important;
+}
+
+.btn-outline-primary:hover {
+    background-color: #5B5FEF !important;
+    border-color: #5B5FEF !important;
+    color: #fff !important;
 }
 
 /* =========================
